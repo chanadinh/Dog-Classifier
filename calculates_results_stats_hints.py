@@ -102,7 +102,7 @@ def calculates_results_stats(results_dic):
         pass
         
         # Pet Image Label is a Dog - counts number of dog images
-        if results_dic[key][3] == 1:
+        if results_dic[key][4] == 1:
             results_stats_dic['n_dogs_img'] += 1
             
             # Classifier classifies image as Dog (& pet image is a dog)
