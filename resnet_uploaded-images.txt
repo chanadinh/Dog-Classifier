@@ -89,4 +89,4 @@ INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:              italian greyhound
 Real:                        dog   Classifier:                        whippet
 
-** Total Elapsed Runtime: 0:59:59
+** Total Elapsed Runtime: 0:0:0

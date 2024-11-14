@@ -21,6 +21,7 @@
 #
 ##
 # Imports classifier function for using CNN to classify images 
+import os
 from classifier import classifier 
 
 # TODO 3: Define classify_images function below, specifically replace the None
@@ -68,7 +69,7 @@ def classify_images(images_dir, results_dic, model):
     # Process all files in the results_dic - use images_dir to give fullpath
     # that indicates the folder and the filename (key) to be used in the 
     # classifier function
-    for key in results_dic:
+    for key,value in results_dic.items():
        
        # TODO: 3a. Set the string variable model_label to be the string that's 
        #           returned from using the classifier function instead of the   
@@ -78,7 +79,7 @@ def classify_images(images_dir, results_dic, model):
        # inputs: path + filename  and  model, returns model_label 
        # as classifier label
       # if key not in results_dic:
-        model_label = classifier(images_dir + key, model)
+        model_label = classifier(os.path.join(images_dir, key), model)
       # else:
       #     print(images_dir + key)
       
@@ -94,7 +95,7 @@ def classify_images(images_dir, results_dic, model):
         model_label = model_label.lower().strip()
               
        # defines truth as pet image label 
-        truth = results_dic[key][0]
+        truth = value[0]
 
        # TODO: 3c. REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
@@ -106,7 +107,7 @@ def classify_images(images_dir, results_dic, model):
        # as an exact match to on of the terms in the list - then they are added to 
        # results_dic as an exact match(1) using extend list function
         if truth in model_label:
-             results_dic[key].extend([model_label, 1])
+             value.extend([model_label, 1])
 
        # TODO: 3d. REPLACE pass BELOW with CODE that uses the extend list function
        #           to add the classifier label (model_label) and the value of
@@ -117,4 +118,4 @@ def classify_images(images_dir, results_dic, model):
        # if not found then added to results dictionary as NOT a match(0) using
        # the extend function 
         else:
-             results_dic[key].extend([model_label, 0])
+             value.extend([model_label, 0])
