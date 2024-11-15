@@ -48,10 +48,10 @@ The project supports three CNN architectures:
 - AlexNet: Efficient architecture with fewer parameters.
 - ResNet: Residual network designed to address vanishing gradient problems.
 ## Output
-- Classification accuracy (overall, dog breed, and non-dog images)
-- Misclassifications (optional)
+1. Identifying which pet images are of dogs and which pet images aren't of dogs
+2. Classifying the breeds of dogs, for the images that are of dogs
   
-![alt text](https://video.udacity-data.com/topher/2018/March/5aa84e54_aipnd-intropythonlab-results/aipnd-intropythonlab-results.png)
+    ![alt text](https://video.udacity-data.com/topher/2018/March/5aa84e54_aipnd-intropythonlab-results/aipnd-intropythonlab-results.png)
 
 ## License
 This project is open-source and available under the MIT License.
