@@ -18,8 +18,18 @@ Your city is hosting a citywide dog show, and you've volunteered to help with co
 - `calculates_results_stats.py`: Computes classification statistics.
 - `print_results.py`: Displays results, including incorrect classifications.
 ## Prerequisites
-- Python 3.x
-- Required Python libraries: `argparse`, `time`
+1. Python 3.6+: This project requires Python 3.6 or higher.
+2. PyTorch: Install PyTorch with support for your environment (CPU or GPU). Follow the instructions at PyTorch's installation page.
+3. torchvision: This library provides popular datasets, model architectures, and image transformations for computer vision.
+    ```bash
+   pip install torchvision
+    ```
+5. PIL (Python Imaging Library): Pillow is required for image processing.
+    ```bash
+   pip install pillow
+    ```
+7. ImageNet Labels File: Download the imagenet1000_clsid_to_human.txt file. This file provides human-readable labels for the ImageNet classes and should be in the project directory.
+8. Basic Python Skills: Understanding Python syntax, functions, and basic data handling is essential, as the focus is on using a provided classifier with Python.
 ## Usage
 To classify images with the Dog Classifier, you can run two batch files depending on your environment:
 
