@@ -5,7 +5,7 @@ Image Classification for a City Dog Show project is a Python program that uses a
 This project is useful for understanding image classification using transfer learning and comparing various CNN architectures for accuracy in classifying dog breeds.
 ## Project Description
 Your city is hosting a citywide dog show, and you've volunteered to help with contestant registration. Participants are required to submit an image of their dog along with biographical information. However, some people might try to register pets that aren’t actual dogs.
-##Features
+## Features
 - Image Classification: Classifies pet images using a selected pre-trained CNN model.
 - Model Comparison: Compares the performance of three CNN models to determine the best one for dog breed classification.
 - Evaluation Metrics: Calculates and displays the model’s accuracy and error rates for classification tasks, including whether an image is of a dog or not.
