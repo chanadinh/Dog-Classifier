@@ -13,7 +13,7 @@ Your city is hosting a citywide dog show, and you've volunteered to help with co
 - `check_images.py`: Main script that orchestrates the image classification, comparison, and evaluation process.
 - `get_input_args.py`: Handles command-line arguments.
 - `get_pet_labels.py`: Extracts the true label from each image filename.
-- `classify_images.py`: Classifies each image using the selected CNN model.
+- `classify_images.py`: Classifies each image using the selected pre-trained model.
 - `adjust_results4_isadog.py`: Adjusts results to check if the classification is a dog or not.
 - `calculates_results_stats.py`: Computes classification statistics.
 - `print_results.py`: Displays results, including incorrect classifications.
